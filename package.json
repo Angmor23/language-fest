@@ -1,0 +1,14 @@
+{
+  "name": "language-fest",
+  "main": "./lib/language-fest",
+  "version": "0.0.0",
+  "description": "XML+Fest syntax highlighting",
+  "keywords": [
+  ],
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}
