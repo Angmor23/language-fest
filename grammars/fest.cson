@@ -3,7 +3,7 @@
 	'xml'
 ]
 'firstLineMatch': 'http://fest.mail.ru"'
-'name': 'Fest XML'
+'name': 'XML'
 'patterns': [
   {
     'begin': '(<\\?)\\s*([-_a-zA-Z0-9]+)'
@@ -165,7 +165,7 @@
       '1':
         'name': 'punctuation.definition.tag.xml'
       '2':
-        'name': 'entity.name.tag.script.xml'
+        'name': 'entity.name.tag.xml'
     'end': '(?<=</fest:(?:script|params))(>)(?:\\s*\\n)?'
     'endCaptures':
       '2':
@@ -181,7 +181,7 @@
           '1':
             'name': 'punctuation.definition.tag.xml'
           '2':
-            'name': 'entity.name.tag.script.xml'
+            'name': 'entity.name.tag.xml'
         'end': '(</)((?i:fest:(?:script|params)))'
         'patterns': [
           {
