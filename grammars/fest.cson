@@ -3,7 +3,7 @@
 	'xml'
 ]
 'firstLineMatch': 'http://fest.mail.ru"'
-'name': 'XML'
+'name': 'XML:Fest'
 'patterns': [
   {
     'begin': '(<\\?)\\s*([-_a-zA-Z0-9]+)'
