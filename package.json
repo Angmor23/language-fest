@@ -1,9 +1,11 @@
 {
   "name": "language-fest",
   "main": "./lib/language-fest",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "XML+Fest syntax highlighting and snippets",
-  "keywords": ["fest"],
+  "keywords": [
+    "fest"
+  ],
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
@@ -12,6 +14,5 @@
     "type": "git",
     "url": "git+https://github.com/Angmor23/language-fest.git"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
