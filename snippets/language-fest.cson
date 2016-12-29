@@ -1,181 +1,181 @@
 '.text.xml':
 
-  'fest:template':
-    'prefix': 'fest:tpl'
-    'body': '''
-      <fest:template xmlns:fest="http://fest.mail.ru" context_name="json">
-        ${1:<!-- code -->}
-      </fest:template>
-    '''
+	'fest:template':
+		'prefix': 'fest:tpl'
+		'body': '''
+			<fest:template xmlns:fest="http://fest.mail.ru" context_name="json">
+				${1:<!-- code -->}
+			</fest:template>
+		'''
 
-  'fest:text':
-    'prefix': 'fest:text'
-    'body': '''
-      <fest:text>
-        "${1:Hello, World}"
-      </fest:text>
-    '''
+	'fest:text':
+		'prefix': 'fest:text'
+		'body': '''
+			<fest:text>
+				"${1:Hello, World}"
+			</fest:text>
+		'''
 
-  'fest:space':
-    'prefix': 'fest:space'
-    'body': '''
-      <fest:space/>
-    '''
+	'fest:space':
+		'prefix': 'fest:space'
+		'body': '''
+			<fest:space/>
+		'''
 
-  'fest:set':
-    'prefix': 'fest:set'
-    'body': '''
-    <fest:set name="${1:name}">
-      ${2:<!-- code -->}
-    </fest:set>
-    '''
+	'fest:set':
+		'prefix': 'fest:set'
+		'body': '''
+		<fest:set name="${1:name}">
+			${2:<!-- code -->}
+		</fest:set>
+		'''
 
-  'fest:get':
-    'prefix': 'fest:get'
-    'body': '''
-    <fest:get name="${1:name}">
-      <fest:params>
-        {
-          mods: [],
-          mix: [],
-          attrs: {}
-        }
-      </fest:params>
-    </fest:get>
-    '''
+	'fest:get':
+		'prefix': 'fest:get'
+		'body': '''
+		<fest:get name="${1:name}">
+			<fest:params>
+				{
+					mods: [],
+					mix: [],
+					attrs: {}
+				}
+			</fest:params>
+		</fest:get>
+		'''
 
-  'fest:script':
-    'prefix': 'fest:script'
-    'body': '''
-    <fest:script>
-      ${1:// code}
-    </fest:script>
-    '''
+	'fest:script':
+		'prefix': 'fest:script'
+		'body': '''
+		<fest:script>
+			${1:// code}
+		</fest:script>
+		'''
 
-  'fest:value':
-    'prefix': 'fest:val'
-    'body': '''
-    <fest:value output="text">
-      ${1:<!-- code -->}
-    </fest:value>
-    '''
+	'fest:value':
+		'prefix': 'fest:val'
+		'body': '''
+		<fest:value output="text">
+			${1:<!-- code -->}
+		</fest:value>
+		'''
 
-  'fest:if':
-    'prefix': 'fest:if'
-    'body': '''
-    <fest:if test="${1:true}">
-      ${2:<!-- code -->}
-    </fest:if>
-    '''
+	'fest:if':
+		'prefix': 'fest:if'
+		'body': '''
+		<fest:if test="${1:true}">
+			${2:<!-- code -->}
+		</fest:if>
+		'''
 
-  'fest:choose':
-    'prefix': 'fest:choose'
-    'body': '''
-    <fest:choose>
-      <fest:when test="${1:1 === 1}">
-        <fest:text>one</fest:text>
-      </fest:when>
+	'fest:choose':
+		'prefix': 'fest:choose'
+		'body': '''
+		<fest:choose>
+			<fest:when test="${1:1 === 1}">
+				<fest:text>one</fest:text>
+			</fest:when>
 
-      <fest:otherwise>
-        <fest:text>More than 2</fest:text>
-      </fest:otherwise>
-    </fest:choose>
-    '''
+			<fest:otherwise>
+				<fest:text>More than 2</fest:text>
+			</fest:otherwise>
+		</fest:choose>
+		'''
 
-  'fest:each':
-    'prefix': 'fest:each'
-    'body': '''
-    <fest:each iterate="${1:arr}" index="${2:i}" value="${3:item}">
-      ${4:<!-- code -->}
-    </fest:each>
-    '''
+	'fest:each':
+		'prefix': 'fest:each'
+		'body': '''
+		<fest:each iterate="${1:arr}" index="${2:i}" value="${3:item}">
+			${4:<!-- code -->}
+		</fest:each>
+		'''
 
-  'fest:for':
-    'prefix': 'fest:for'
-    'body': '''
-    <fest:for iterate="${1:arr}" index="${2:i}" value="${3:item}">
-      ${4:<!-- code -->}
-    </fest:for>
-    '''
+	'fest:for':
+		'prefix': 'fest:for'
+		'body': '''
+		<fest:for iterate="${1:arr}" index="${2:i}" value="${3:item}">
+			${4:<!-- code -->}
+		</fest:for>
+		'''
 
-  'fest:comment':
-    'prefix': 'fest:comment'
-    'body': '''
-      <fest:comment>${1:comment}</fest:comment>
-    '''
+	'fest:comment':
+		'prefix': 'fest:comment'
+		'body': '''
+			<fest:comment>${1:comment}</fest:comment>
+		'''
 
-  'fest:params':
-    'prefix': 'fest:params'
-    'body': '''
-    <fest:params>
-      {
-        mods: [],
-        mix: [],
-        attrs: {}
-      }
-    </fest:params>
-    '''
+	'fest:params':
+		'prefix': 'fest:params'
+		'body': '''
+		<fest:params>
+			{
+				mods: [],
+				mix: [],
+				attrs: {}
+			}
+		</fest:params>
+		'''
 
-  'fest:param':
-    'prefix': 'fest:param'
-    'body': '''
-    <fest:param name="${1:html}">
-      ${2:<!-- code -->}
-    </fest:param>
-    '''
+	'fest:param':
+		'prefix': 'fest:param'
+		'body': '''
+		<fest:param name="${1:html}">
+			${2:<!-- code -->}
+		</fest:param>
+		'''
 
 
-  'fest:cdata':
-    'prefix': 'fest:cdata'
-    'body': '''
-    <![CDATA[
-      <script>
-        console.log(JSON.parse(]]><fest:value output="json">JSON.stringify(${1:item})</fest:value><![CDATA[));
-      </script>
-    ]]>
-    '''
+	'fest:cdata':
+		'prefix': 'fest:cdata'
+		'body': '''
+		<![CDATA[
+			<script>
+				console.log(JSON.parse(]]><fest:value output="json">JSON.stringify(${1:item})</fest:value><![CDATA[));
+			</script>
+		]]>
+		'''
 
-  'fest:mergeTopParams':
-    'prefix': 'fest:mergeTopParams'
-    'body': '''
-        fest._helpers.mergeTopParams({}, params)
-    '''
+	'fest:mergeTopParams':
+		'prefix': 'fest:mergeTopParams'
+		'body': '''
+				fest._helpers.mergeTopParams({}, params)
+		'''
 
-  'fest:mergeParams':
-    'prefix': 'fest:mergeParams'
-    'body': '''
-        fest._helpers.mergeParams(true, {}, params)
-    '''
+	'fest:mergeParams':
+		'prefix': 'fest:mergeParams'
+		'body': '''
+				fest._helpers.mergeParams(true, {}, params)
+		'''
 
-  'fest:mix':
-    'prefix': 'fest:mix'
-    'body': '''
-      mix: ['${1:mix_name}'],
-    '''
+	'fest:mix':
+		'prefix': 'fest:mix'
+		'body': '''
+			mix: ['${1:mix_name}'],
+		'''
 
-  'fest:mods':
-    'prefix': 'fest:mods'
-    'body': '''
-      mods: ['${1:mod_name}'],
-    '''
+	'fest:mods':
+		'prefix': 'fest:mods'
+		'body': '''
+			mods: ['${1:mod_name}'],
+		'''
 
-  'fest:attrs':
-    'prefix': 'fest:attrs'
-    'body': '''
-      attrs: {
-        ${1:attr_name}: ${2:attr_value}
-      },
-    '''
+	'fest:attrs':
+		'prefix': 'fest:attrs'
+		'body': '''
+			attrs: {
+				${1:attr_name}: ${2:attr_value}
+			},
+		'''
 
 
 '.source.js':
 
-  'fest:mustDeps':
-    'prefix': 'fest:mustDeps'
-    'body': '''
-      ({
-        mustDeps: [
-          { block: '${1:block_name}' }
-        ]
-      })
-    '''
+	'fest:mustDeps':
+		'prefix': 'fest:mustDeps'
+		'body': '''
+			({
+				mustDeps: [
+					{ block: '${1:block_name}' }
+				]
+			})
+		'''
