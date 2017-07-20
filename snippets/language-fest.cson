@@ -171,10 +171,19 @@
 '.source.js':
 
 	'fest:mustDeps':
-		'prefix': 'fest:mustDeps'
+		'prefix': 'fest:mdeps'
 		'body': '''
 			({
 				mustDeps: [
+					{ block: '${1:block_name}' }
+				]
+			})
+		'''
+	'fest:shouldDeps':
+		'prefix': 'fest:sdeps'
+		'body': '''
+			({
+				shouldDeps: [
 					{ block: '${1:block_name}' }
 				]
 			})
