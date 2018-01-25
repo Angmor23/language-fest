@@ -1,16 +1,18 @@
 {
-	"name": "language-fest",
-	"main": "./lib/language-fest",
-	"version": "2.4.0",
-	"description": "XML+Fest syntax highlighting and snippets",
-	"keywords": ["fest"],
-	"license": "MIT",
-	"engines": {
-		"atom": ">=1.0.0 <2.0.0"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/Angmor23/language-fest.git"
-	},
-	"dependencies": {}
+  "name": "language-fest",
+  "main": "./lib/language-fest",
+  "version": "2.4.1",
+  "description": "XML+Fest syntax highlighting and snippets",
+  "keywords": [
+    "fest"
+  ],
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Angmor23/language-fest.git"
+  },
+  "dependencies": {}
 }
