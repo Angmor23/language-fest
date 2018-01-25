@@ -16,6 +16,12 @@
 			</fest:text>
 		'''
 
+	'fest:plural':
+		'prefix': 'fest:plural'
+		'body': '''
+			<fest:plural select="${1:price}">один рубль|%s рубля|%s рублей</fest:plural>
+		'''
+
 	'fest:space':
 		'prefix': 'fest:space'
 		'body': '''
@@ -150,13 +156,13 @@
 	'fest:mix':
 		'prefix': 'fest:mix'
 		'body': '''
-			mix: ['${1:mix_name}'],
+			mix: ["${1:mix_name}"],
 		'''
 
 	'fest:mods':
 		'prefix': 'fest:mods'
 		'body': '''
-			mods: ['${1:mod_name}'],
+			mods: ["${1:mod_name}"],
 		'''
 
 	'fest:attrs':
@@ -175,7 +181,7 @@
 		'body': '''
 			({
 				mustDeps: [
-					{ block: '${1:block_name}' }
+					{ block: "${1:block_name}" }
 				]
 			})
 		'''
@@ -184,7 +190,7 @@
 		'body': '''
 			({
 				shouldDeps: [
-					{ block: '${1:block_name}' }
+					{ block: "${1:block_name}" }
 				]
 			})
 		'''
