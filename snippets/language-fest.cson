@@ -54,7 +54,7 @@
 		'prefix': 'fest:script'
 		'body': '''
 		<fest:script>
-			${1:// code}
+			${1:var data - params.data;}
 		</fest:script>
 		'''
 
@@ -151,6 +151,12 @@
 		'prefix': 'fest:mergeParams'
 		'body': '''
 				fest._helpers.mergeParams(true, {}, params)
+		'''
+
+	'fest:mergeParams':
+		'prefix': 'fest:extend'
+		'body': '''
+				fest._helpers.extend(${1:obj})
 		'''
 
 	'fest:mix':
