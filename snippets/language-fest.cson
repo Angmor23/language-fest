@@ -153,7 +153,7 @@
 				fest._helpers.mergeParams(true, {}, params)
 		'''
 
-	'fest:mergeParams':
+	'fest:extend':
 		'prefix': 'fest:extend'
 		'body': '''
 				fest._helpers.extend(${1:obj})
