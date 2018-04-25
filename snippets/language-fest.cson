@@ -54,7 +54,7 @@
 		'prefix': 'fest:script'
 		'body': '''
 		<fest:script>
-			${1:var data - params.data;}
+			${1:var data = params.data;}
 		</fest:script>
 		'''
 
